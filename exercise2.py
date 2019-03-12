@@ -20,7 +20,7 @@ app.layout = html.Div(children=[
 
     # set the description underneath the heading
     html.Div(children='''
-        A scatter plot to show the relationship between engine size and city MPG of German cars.
+        A scatter plot to show the relationship between engine size and city MPG.
     '''),
 
     # append the visualization to the page
@@ -43,7 +43,7 @@ app.layout = html.Div(children=[
                 )
             ],
             'layout': {
-                'title': 'German Car Dataset 2004',
+                'title': 'Car Dataset 2004',
                 # It is always a good practice to have axis labels.
                 # This is especially important in this case as the numbers are not trivial
                 'xaxis': {'title': 'Engine Size (l)'},
