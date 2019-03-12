@@ -10,8 +10,8 @@ import pandas as pd
 # You can use pandas to help loading data, or just hard-coded the data is fine.
 
 # initialize Dash app and initialize the static folder
-app = dash.Dash(__name__)
-df = pd.read_csv('/Users/Kush/Documents/Courses/HCDE411/data_car_2004_Germany.csv')
+app = dash.Dash(__name__, static_folder='static')
+df = pd.read_csv('static/data_car_2004.csv')
 # set layout of the page
 app.layout = html.Div(children=[
 
